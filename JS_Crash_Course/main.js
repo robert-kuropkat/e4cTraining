@@ -1,9 +1,7 @@
-//
-// Using console.log() as some commentary on the Internet mentioned
-// many servers/applications naturally filter info(), warn() and 
-// error() into separate log files, while many Linters, by default,
-// warn or fail if any calls to log() remain in the code.
-
+/**
+ * All skill demonstrations removed from main.js t omake them easier to review
+ * and remove.  main.js will be reserved for the DOM part of the tutorial.
+ */
 console.log("\nNow loading main.js...");
 
 

@@ -36,7 +36,17 @@
       </ul> -->
     </section>
     
+    <!--
+      Demonstrate use of the script tag and send a sample message
+      of each logging type (log, info, warn, error) just to see 
+      who each displayes in the browser console.
 
+      Throughout the rest of the scripts, I will be using console.log() 
+      as some commentary on the Internet mentioned many servers/applications 
+      naturally filter info(), warn() and  error() into separate log files, 
+      while many Linters, by default, warn or fail if any calls to log() 
+      remain in the code.
+    -->
     <script>
       console.log("Sample log message levels:");
       console.log("LOG level");
@@ -45,6 +55,10 @@
       console.error("ERROR level");
       console.log("\nForm is Loaded...");
     </script>
+    <!--
+      Separate demonstrations of various JavaScript skills from the tutorial
+      into separate scripts so it is easier to review and remove them.
+    -->
     <script src="main.js"></script>
     <script src="variables.js"></script>
     <script src="strings.js"></script>

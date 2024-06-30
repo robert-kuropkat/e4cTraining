@@ -1,6 +1,23 @@
-//
-// Loops
-//
+/**
+ * Loops
+ * 
+ * Demonsrate various looping mechanisms by looping over an array of structs.  Styles
+ * demonsrated include a 'traditional' for loop with initializer, terminator and index,
+ * a 'for-of' style loop which is new to me but a very nice, compact structure I can 
+ * see being very useful for looping over arrays of complex structures and finallly 
+ * the builtin Array.foreach() method which is a nice concept, but a bit cumbersome 
+ * in that you have to pass it a callback function.
+ * 
+ * ToDo: Can functions be defined outside the the foreach() call and passed in?  
+ * Something like:
+ * 
+ *    function CallMe () { ... do something ... };
+ *    Array.function( CallMe() );
+ * 
+ * Also included, since the work much the same as Array.foreach(), map() and filter()
+ * and as a bonus, stacking them, just cause...
+ * 
+ */
 
 console.log('\nLoops and Arrays...');
 
@@ -37,3 +54,6 @@ console.log("\nMap and Filter Array method (get text of completed items)");
 const todoText = todos.filter( function(todo) { return todo.isCompleted === true; } ).map( function(todo) { return todo.text } );
 console.log(todoText);
 
+/**
+ *  End of Code
+ */
