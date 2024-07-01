@@ -1,16 +1,15 @@
 /**
  * @file Contains array related exercises
- * 
- * @author Robert Kuropkat <robert.kuropkat@gmail.com>
- * 
- * @description
+ *
  * Demonstrate creation and manipulation of arrays.  Items demonstrated
  * 
  *   - Creation of Array
  *   - Remove and add a the last member of the array (pop/push)
  *   - Remove and add the first member of the array (shift/unshift)
  *   - Builtin array methods and properties such as isArray(), length and indexOf().
- *
+ * 
+ * @author Robert Kuropkat <robert.kuropkat@gmail.com>
+ * 
  */
 
 console.log('\nArray Properties and Methods...');
