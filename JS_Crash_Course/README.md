@@ -13,7 +13,7 @@ For these exercises I used the following:
 5. DocDash plugin installed via npm for Windows.  
 6. JSDoc to Markdown plugin installed via npm for Windows.
 
-NOTE: The default installation for DocDash did not work properly.  I had to copy the docdash,
+**NOTE:** The default installation for DocDash did not work properly.  I had to copy the docdash,
 jsdoc and the jsdoc-to-markdown directories from 
 
 _C:\Users\rober\AppData\Roaming\nvm\v22.3.0\node_modules_
