@@ -1,3 +1,5 @@
+[Home](/)
+
 # JavaScript Tutorials
 
 The e4c basic JavaScript training uses the 
