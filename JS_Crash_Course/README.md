@@ -16,9 +16,9 @@ For these exercises I used the following:
 NOTE: The default installation for DocDash did not work properly.  I had to copy the docdash,
 jsdoc and the jsdoc-to-markdown directories from 
 
-__C:\Users\rober\AppData\Roaming\nvm\v22.3.0\node_modules__
+_C:\Users\rober\AppData\Roaming\nvm\v22.3.0\node_modules_
 <br>to
-<br>__C:\Users\rober\AppData\Roaming\nvm\v22.3.0\node_modules\jsdoc\node_modules__
+<br>_C:\Users\rober\AppData\Roaming\nvm\v22.3.0\node_modules\jsdoc\node_modules_
 
 This is probably a path/configuration problem with my npm setup.
 
