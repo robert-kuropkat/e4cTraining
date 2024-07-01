@@ -1,6 +1,8 @@
 /**
  * @file Contains array related exercises
  * 
+ * @author Robert Kuropkat <robert.kuropkat@gmail.com>
+ * 
  * Demonstrate creation and manipulation of arrays.  Items demonstrated
  * 
  *   - Creation of Array
