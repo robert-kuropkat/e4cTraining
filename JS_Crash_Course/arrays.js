@@ -8,7 +8,7 @@
  *   <li> Remove and add a the last member of the array (pop/push)
  *   <li> Remove and add the first member of the array (shift/unshift)
  *   <li> Builtin array methods and properties such as isArray(), length 
- *   <li>    and indexOf().
+ *           and indexOf().
  * </ul>
  */
 
