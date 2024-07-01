@@ -3,4 +3,4 @@ remote_theme: pages-themes/time-machine@v0.2.0
 plugins:
 - jekyll-remote-theme
 title: e4cTraining
-description: Training modules for e4c
+description: Training modules for e4c...
