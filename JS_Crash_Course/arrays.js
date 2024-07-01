@@ -1,18 +1,25 @@
 /**
- * Arrays
+ * @file 
  * 
  * Demonstrate creation and manipulation of arrays.  Items demonstrated
- * 
- *   * Creation of Array
- *   * Remove and add a the last member of the array (pop/push)
- *   * Remove and add the first member of the array (shift/unshift)
- *   * Builtin array methods and properties such as isArray(), length 
- *   *    and indexOf().
+ * <ul>
+ *   <li> Creation of Array
+ *   <li> Remove and add a the last member of the array (pop/push)
+ *   <li> Remove and add the first member of the array (shift/unshift)
+ *   <li> Builtin array methods and properties such as isArray(), length 
+ *   <li>    and indexOf().
+ * </ul>
  */
 
 console.log('\nArray Properties and Methods...');
 
+/**
+ * @const {array}
+ */
 const fruits = ['strawberries', 'apples', 'pears'];
+/**
+ * @type {string}
+ */
 let fruit;
 
 console.log("\nRemove last value in array, then put it back (pop/push)");

@@ -1,25 +1,25 @@
 /**
- * Branching Logic
+ * @file
  * 
  * Demonstrate various branching constructs.  In particular the if/else if, Ternary
  * operator and the switch statement.
- * 
+ * <p>
  * Also of interest is the difference between '==' and '===' which is new to me and
  * so demonsrated below
- * 
+ * <p>
  * NOTE: This also contains examples of my default coding style.  The first is to 
  * flatten or "one-line" simple if statements.  I feel devoting entire lines to 
  * opening and closing punctuation to be a waste of screen real estate unless they
  * are blocking of larger sections of code.
- * 
+ * <p>
  * I also tend to align punctuation and other markers such as opening and closing
  * braces, equalit comparisons, etc.  This is done because, especially on one-line
  * type statements the difference between the 'if' and and the 'else' can be subtle.
  * This alignment usually makes it easier to distinguish the difference.
- * 
+ * <p>
  * Finally, when I have a complex 'if' directive, I tend to put them on separate lines
  * and align them.  Again, I simply feel this is more readable.
- * 
+ * <p>
  * P.S.  I've always been a big fan of the Ternary Operator... :-)
  */
 

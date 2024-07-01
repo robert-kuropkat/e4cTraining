@@ -1,15 +1,14 @@
-
 /**
- * Functions
+ * @file
  * 
  * Demonsrate the creation and use of functions.  Functions are created in two
  * styles.  The first is the older style makinguse of the 'function' directive.
  * The second is the 'arrow function' style.
- * 
+ * <p>
  * The arrow function style is newer to me and quite frankly looks more complicated
  * than it is worth in these simple examples.  I am assuming it will prove useful
  * in some later. more complex code constructs.
- * 
+ * <p>
  * NOTE: Because these functions are small one-liners, I've coded them in a manner
  * I am prone to.  i.e. "one-lining" the whole function.  I've never believed 
  * punctuation deserves so much screen real estate unless it is blocking off larger
@@ -18,6 +17,17 @@
 
 console.log('\nFunctions...');
 
+/**
+ * @function
+ * @description Applies a 25% discout to the price passed in.
+ * <p>
+ * This function is implemented using the 'function' directive.
+ * <pre>
+ * function ApplyDiscount_f(price) { return price * .75; }
+ * </pre>
+ * @param {number} price 
+ * @returns {number}
+ */
 function ApplyDiscount_f(price) { return price * .75; }
 console.log(`\tOld school function (25% discount)\t: ${ApplyDiscount_f(100)}`);
 

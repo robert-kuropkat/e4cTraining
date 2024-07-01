@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>if.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/robert-kuropkat/e4cTraining" target="_blank" class="menu-item" id="repository" >Github repo</a></h2><h3>Classes</h3><ul><li><a href="Person.html">Person</a></li><li><a href="PersonClass.html">PersonClass</a><ul class='methods'><li data-type='method' style='display: none;'><a href="PersonClass.html#getFullName">getFullName</a></li></ul></li><li><a href="person_.html">person</a></li></ul><h3>Global</h3><ul><li><a href="global.html#ApplyDiscount_f">ApplyDiscount_f</a></li><li><a href="global.html#age">age</a></li><li><a href="global.html#fruit">fruit</a></li><li><a href="global.html#fruits">fruits</a></li><li><a href="global.html#getFullName">getFullName</a></li><li><a href="global.html#isCool">isCool</a></li><li><a href="global.html#message">message</a></li><li><a href="global.html#name">name</a></li><li><a href="global.html#person1">person1</a></li><li><a href="global.html#person2">person2</a></li><li><a href="global.html#rating">rating</a></li><li><a href="global.html#stringNumber">stringNumber</a></li><li><a href="global.html#variableType">variableType</a></li><li><a href="global.html#x">x</a></li><li><a href="global.html#y">y</a></li><li><a href="global.html#z">z</a></li></ul>
+    
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">if.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @file
+ * 
+ * Demonstrate various branching constructs.  In particular the if/else if, Ternary
+ * operator and the switch statement.
+ * &lt;p>
+ * Also of interest is the difference between '==' and '===' which is new to me and
+ * so demonsrated below
+ * &lt;p>
+ * NOTE: This also contains examples of my default coding style.  The first is to 
+ * flatten or "one-line" simple if statements.  I feel devoting entire lines to 
+ * opening and closing punctuation to be a waste of screen real estate unless they
+ * are blocking of larger sections of code.
+ * &lt;p>
+ * I also tend to align punctuation and other markers such as opening and closing
+ * braces, equalit comparisons, etc.  This is done because, especially on one-line
+ * type statements the difference between the 'if' and and the 'else' can be subtle.
+ * This alignment usually makes it easier to distinguish the difference.
+ * &lt;p>
+ * Finally, when I have a complex 'if' directive, I tend to put them on separate lines
+ * and align them.  Again, I simply feel this is more readable.
+ * &lt;p>
+ * P.S.  I've always been a big fan of the Ternary Operator... :-)
+ */
+
+console.log('\nIf statements...');
+
+/**
+ * Set a variable to the string '1', then do comparisons using '==' and '==='
+ * against both a string and a number value.
+ * 
+ * ToDo:  is there a not euqal, grater than or less than version of '===' that compares
+ * the value and does a type check?  Is there any use to such a thing?
+ */
+
+let stringNumber = '1';
+
+if      ( stringNumber ==   1  ) { console.log("\t'stringNumber' is either a string or a number"); };
+
+if      ( stringNumber ===  1  ) { console.log("\t'stringNumber' is a number, not a string"); }
+else if ( stringNumber === '1' ) { console.log("\t'stringNumber' is a string, not a number"); }
+
+if (  stringNumber &lt; 2
+   &amp;&amp; stringNumber > 0
+   ) { console.log( "\tstringNumber must be One" ) }
+
+/**
+ * use the Ternary Operator and typeOf() function to check if the variable is a string.
+ * The use of '===' in this case was unneccesary...
+ */
+let variableType = typeof(stringNumber) === "string" ? "String" : "Something Else";
+console.log(`\nTernary Operator`);
+console.log(`\tstringNumber variable is type: ${variableType}`);
+
+/**
+ * Use a switch statement to check variable type.  Obviously the switch statement
+ * is not complete for all data types.
+ */
+console.log(`\nSwitch Statement`);
+
+switch (typeof(stringNumber)) {
+    case 'string':
+        console.log('\tVariable type is a string');
+        break;
+    case 'boolean':
+        console.log('\tVariable type is a boolean');
+        break;
+    default:
+        console.log('\tVariable type is something else');
+        break;
+}
+
+/**
+ *  End of Code
+ */</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Jul 01 2024 00:01:49 GMT-0400 (Eastern Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+<script src="scripts/collapse.js" defer></script>
+
+
+</body>
+</html>

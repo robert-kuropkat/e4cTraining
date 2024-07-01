@@ -1,5 +1,5 @@
 /**
- * Loops
+ * @file
  * 
  * Demonsrate various looping mechanisms by looping over an array of structs.  Styles
  * demonsrated include a 'traditional' for loop with initializer, terminator and index,
@@ -7,13 +7,13 @@
  * see being very useful for looping over arrays of complex structures and finallly 
  * the builtin Array.foreach() method which is a nice concept, but a bit cumbersome 
  * in that you have to pass it a callback function.
- * 
+ * <p>
  * ToDo: Can functions be defined outside the the foreach() call and passed in?  
  * Something like:
- * 
+ * <pre>
  *    function CallMe () { ... do something ... };
  *    Array.function( CallMe() );
- * 
+ * </pre>
  * Also included, since the work much the same as Array.foreach(), map() and filter()
  * and as a bonus, stacking them, just cause...
  * 

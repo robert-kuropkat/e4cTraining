@@ -1,12 +1,12 @@
 /**
- * Strings
+ * @file
  * 
  * Simple string manipulation such as old-school concatenation using the
  * '+' sign, sending multiple parameters separated by a comma (to functions
  * that accept that) and Template Strings which are new to me, but similar 
  * printf() in some languages (without the formating options) or Perl 
  * interpolation.
- * 
+ * <p>
  * Also demonsrated, a sample of builtin string methods and properties such 
  * as substring(), length, toUpperCase() and split().
  */
