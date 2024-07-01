@@ -1,4 +1,4 @@
-[Home](/) | [e4c Training](/e4cTraining)
+[Home](/) -> [e4c Training](/e4cTraining)
 
 # JavaScript Tutorials
 
