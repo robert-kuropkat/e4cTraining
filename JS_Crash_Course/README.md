@@ -10,3 +10,5 @@ Traversy Media
 3. If you wish to cheat a little, use the link in the comments to snag index.html and style.css
 
 [Sample Application](./index1.html)
+[Sample Application Documentation](./docs)
+
