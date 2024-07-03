@@ -1,6 +1,9 @@
 # theme: jekyll-theme-minimal
 remote_theme: pages-themes/time-machine@v0.2.0
-plugins:
+plugins     :
 - jekyll-remote-theme
-title: e4cTraining (Robert Kuropkat)
-description: Training modules for e4c as completed by Roobert Kuropkat
+title       : e4cTraining
+name        : Robert Kuropkat
+description : Training modules for e4c as completed by Roobert Kuropkat
+repository  : "robert-kuropkat/e4cTraining"
+timezone    : America/New_York
