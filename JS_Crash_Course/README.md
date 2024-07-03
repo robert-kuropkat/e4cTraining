@@ -15,8 +15,7 @@ likely spend more time exploring both.
 ## Training Materials
 
 The e4c basic JavaScript training uses the 
-[JavaScript Crash Course For Beginners](https://www.youtube.com/watch?v=hdI2bqOjy3c){:target="_blank" rel="noopener"} 
-by Traversy Media
+[JavaScript Crash Course For Beginners](https://www.youtube.com/watch?v=hdI2bqOjy3c) by Traversy Media
 
 ## Setup
 
