@@ -4,6 +4,6 @@ plugins     :
 - jekyll-remote-theme
 title       : e4cTraining
 name        : Robert Kuropkat
-description : Training modules for e4c as completed by Roobert Kuropkat
+description : Training modules for e4c as completed by Robert Kuropkat
 repository  : "robert-kuropkat/e4cTraining"
 timezone    : America/New_York
