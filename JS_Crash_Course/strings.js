@@ -9,6 +9,7 @@
  * <p>
  * Also demonsrated, a sample of builtin string methods and properties such 
  * as substring(), length, toUpperCase() and split().
+ * @author Robert Kuropkat <robert.kuropkat@gmail.com>
  */
 
 console.log('\nString Concatination...');

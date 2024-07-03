@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>variables.js - Documentation</title>
+    <title>main.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -37,7 +37,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">variables.js</h1>
+    <h1 class="page-title">main.js</h1>
     
 
     
@@ -50,63 +50,69 @@
             <pre class="prettyprint source linenums"><code>/**
  * @file
  * 
- * Set and check basic datatypes which in JavaScript include string,
- * number, boolean, null and undefined.
- * &lt;p>
- * As per the video, I've learned that 'var' while still valid is no
- * longer in fashion with const and let being preferred.  I also found
- * it of particular curiosity that 'const' isn't really constant when
- * referring to more complex data structures since const will allow 
- * you to 'manipulate' the structure, just not reset it (i.e. use an
- * equal sign).
+ * All skill demonstrations removed from main.js t omake them easier to review
+ * and remove.  main.js will be reserved for the DOM part of the tutorial.
  * @author Robert Kuropkat &lt;robert.kuropkat@gmail.com>
  */
+console.log("\nNow loading main.js...");
 
 /**
- * @const {string}
+ * @const {document.form}
  */
-const name      = 'John';
+const myForm        = document.querySelector('#my-form');
 /**
- * @const {number}
+ * @const {document.form.text}
  */
-const age       = 30;
+const nameInput     = document.querySelector('#name');
 /**
- * @const {number}
+ * @const {document.form.text}
  */
-const rating    = 4.5;
+const emailInput    = document.querySelector('#email');
 /**
- * @const {boolean}
+ * @const {document.text}
  */
-const isCool    = true;
+const msg           = document.querySelector('.msg');
 /**
- * @const {null}
+ * @const {document.list}
  */
-const x         = null;
-/**
- * @const {undefined}
- */
-const y         = undefined;
-/**
- * @type {undefined}
- */
-let   z;
-/**
- * @type {string}
- */
-let   message;                  // variable to reuse for console.log() calls
+const userList      = document.querySelector('#users');
 
-console.log('\nVariable Types...');
-console.log('\tName   : ', typeof name);
-console.log('\tAge    : ', typeof age);
-console.log('\tRating : ', typeof rating);
-console.log('\tisCool : ', typeof isCool);
-console.log('\tx      : ', typeof x);
-console.log('\ty      : ', typeof y);
-console.log('\tz      : ', typeof z);
+console.log(emailInput);
 
 /**
- *  End of Code
- */</code></pre>
+ * @function
+ * @description Add event listener for submit action on form
+ */
+myForm.addEventListener('submit', onSubmit);
+
+/**
+ * @function
+ * @description Add name and email to user list below the Submit Button
+ * @param {Event} e 
+ */
+function onSubmit(e) 
+{
+    e.preventDefault();
+
+    if (  nameInput.value  === ''
+       || emailInput.value === '' 
+       )
+    {
+        console.log('Sending error message...');
+        msg.classList.add('error');
+        msg.innerHTML = "Please enter all fields.";
+        setTimeout(() => msg.remove(), 3000);
+    } else {
+        console.log('Saving user information...');
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(`${nameInput.value} : ${emailInput.value}`));
+        userList.appendChild(li);
+
+        nameInput.value  = '';
+        emailInput.value = '';
+    }
+}
+</code></pre>
         </article>
     </section>
 

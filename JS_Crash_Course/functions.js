@@ -13,6 +13,7 @@
  * I am prone to.  i.e. "one-lining" the whole function.  I've never believed 
  * punctuation deserves so much screen real estate unless it is blocking off larger
  * sections of code.
+ * @author Robert Kuropkat <robert.kuropkat@gmail.com>
  */
 
 console.log('\nFunctions...');

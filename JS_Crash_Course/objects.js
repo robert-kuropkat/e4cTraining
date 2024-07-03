@@ -7,6 +7,7 @@
  * implementations available within JavaScript.  They  are Object Literanls 
  * (structs), Objects implemetned as Functions (pre ESv2015)  and Objects 
  * implemented as Classes (post ESv2015).
+ * @author Robert Kuropkat <robert.kuropkat@gmail.com>
  */
 
 console.log('\nObjects...');

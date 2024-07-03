@@ -21,6 +21,7 @@
  * and align them.  Again, I simply feel this is more readable.
  * 
  * _P.S.  I've always been a big fan of the Ternary Operator... :-)_
+ * @author Robert Kuropkat <robert.kuropkat@gmail.com>
  */
 
 console.log('\nIf statements...');

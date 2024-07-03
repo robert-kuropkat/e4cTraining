@@ -16,7 +16,7 @@
  * </pre>
  * Also included, since the work much the same as Array.foreach(), map() and filter()
  * and as a bonus, stacking them, just cause...
- * 
+ * @author Robert Kuropkat <robert.kuropkat@gmail.com>
  */
 
 console.log('\nLoops and Arrays...');

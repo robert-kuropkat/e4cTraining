@@ -10,6 +10,7 @@
  * referring to more complex data structures since const will allow 
  * you to 'manipulate' the structure, just not reset it (i.e. use an
  * equal sign).
+ * @author Robert Kuropkat <robert.kuropkat@gmail.com>
  */
 
 /**
