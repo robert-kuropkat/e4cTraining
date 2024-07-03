@@ -37,6 +37,12 @@ _C:\Users\rober\AppData\Roaming\nvm\v22.3.0\node_modules_
 
 This is probably a path/configuration problem with my npm setup.
 
+**NOTE 2:** in order to run npm (and install JSDoc) I had to execute the following in a
+PowerShell terminal run as Administrator.
+<pre>
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+</pre>
+
 ## Sample Application and Documentation
 
 [Sample Application](./index1.html)  _Not Yet Ready_
