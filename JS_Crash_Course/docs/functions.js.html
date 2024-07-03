@@ -31,7 +31,7 @@
     <input type="text" id="nav-search" placeholder="Search" />
     
     
-    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/robert-kuropkat/e4cTraining" target="_blank" class="menu-item" id="repository" >Github repo</a></h2><h3>Classes</h3><ul><li><a href="Person.html">Person</a></li><li><a href="PersonClass.html">PersonClass</a><ul class='methods'><li data-type='method' style='display: none;'><a href="PersonClass.html#getFullName">getFullName</a></li></ul></li><li><a href="person_.html">person</a></li></ul><h3>Global</h3><ul><li><a href="global.html#ApplyDiscount_f">ApplyDiscount_f</a></li><li><a href="global.html#age">age</a></li><li><a href="global.html#fruit">fruit</a></li><li><a href="global.html#fruits">fruits</a></li><li><a href="global.html#getFullName">getFullName</a></li><li><a href="global.html#isCool">isCool</a></li><li><a href="global.html#message">message</a></li><li><a href="global.html#name">name</a></li><li><a href="global.html#person1">person1</a></li><li><a href="global.html#person2">person2</a></li><li><a href="global.html#rating">rating</a></li><li><a href="global.html#stringNumber">stringNumber</a></li><li><a href="global.html#variableType">variableType</a></li><li><a href="global.html#x">x</a></li><li><a href="global.html#y">y</a></li><li><a href="global.html#z">z</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/robert-kuropkat/e4cTraining" target="_blank" class="menu-item" id="repository" >Github repo</a></h2><h3>Classes</h3><ul><li><a href="Fruits.html">Fruits</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Fruits.html#addToEnd">addToEnd</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#addToFront">addToFront</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#getCurrentFruit">getCurrentFruit</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#getFruitCount">getFruitCount</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#getFruitList">getFruitList</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#isListArray">isListArray</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#removeFirst">removeFirst</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#removeLast">removeLast</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#setCurrentFruit">setCurrentFruit</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#whereIsFruit">whereIsFruit</a></li></ul></li><li><a href="Person.html">Person</a></li><li><a href="PersonClass.html">PersonClass</a><ul class='methods'><li data-type='method' style='display: none;'><a href="PersonClass.html#getFullName">getFullName</a></li></ul></li><li><a href="person_.html">person</a></li></ul><h3>Global</h3><ul><li><a href="global.html#ApplyDiscount_af">ApplyDiscount_af</a></li><li><a href="global.html#ApplyDiscount_f">ApplyDiscount_f</a></li><li><a href="global.html#age">age</a></li><li><a href="global.html#getFullName">getFullName</a></li><li><a href="global.html#isCool">isCool</a></li><li><a href="global.html#message">message</a></li><li><a href="global.html#myFruit">myFruit</a></li><li><a href="global.html#myFruits">myFruits</a></li><li><a href="global.html#name">name</a></li><li><a href="global.html#person1">person1</a></li><li><a href="global.html#person2">person2</a></li><li><a href="global.html#rating">rating</a></li><li><a href="global.html#stringNumber">stringNumber</a></li><li><a href="global.html#variableType">variableType</a></li><li><a href="global.html#x">x</a></li><li><a href="global.html#y">y</a></li><li><a href="global.html#z">z</a></li></ul>
     
 </nav>
 
@@ -53,11 +53,11 @@
  * Demonsrate the creation and use of functions.  Functions are created in two
  * styles.  The first is the older style makinguse of the 'function' directive.
  * The second is the 'arrow function' style.
- * &lt;p>
+ *
  * The arrow function style is newer to me and quite frankly looks more complicated
  * than it is worth in these simple examples.  I am assuming it will prove useful
  * in some later. more complex code constructs.
- * &lt;p>
+ *
  * NOTE: Because these functions are small one-liners, I've coded them in a manner
  * I am prone to.  i.e. "one-lining" the whole function.  I've never believed 
  * punctuation deserves so much screen real estate unless it is blocking off larger
@@ -69,7 +69,7 @@ console.log('\nFunctions...');
 /**
  * @function
  * @description Applies a 25% discout to the price passed in.
- * &lt;p>
+ * 
  * This function is implemented using the 'function' directive.
  * &lt;pre>
  * function ApplyDiscount_f(price) { return price * .75; }
@@ -80,6 +80,17 @@ console.log('\nFunctions...');
 function ApplyDiscount_f(price) { return price * .75; }
 console.log(`\tOld school function (25% discount)\t: ${ApplyDiscount_f(100)}`);
 
+/**
+ * @function
+ * @description Applies a 20% discout to the price passed in.
+ * 
+ * This function is implemented using the 'arrow function' style.
+ * &lt;pre>
+ * function ApplyDiscount_af(price) { return price * .80; }
+ * &lt;/pre>
+ * @param {number} price 
+ * @returns {number}
+ */
 const ApplyDiscount_af = (price) => { return price *.80; }
 console.log(`\tArrow function (20% discount)\t\t: ${ApplyDiscount_af(100)}`);
 
@@ -99,7 +110,7 @@ console.log(`\tArrow function (20% discount)\t\t: ${ApplyDiscount_af(100)}`);
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Jul 01 2024 07:35:07 GMT-0400 (Eastern Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Jul 02 2024 19:58:43 GMT-0400 (Eastern Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

@@ -31,7 +31,7 @@
     <input type="text" id="nav-search" placeholder="Search" />
     
     
-    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/robert-kuropkat/e4cTraining" target="_blank" class="menu-item" id="repository" >Github repo</a></h2><h3>Classes</h3><ul><li><a href="Person.html">Person</a></li><li><a href="PersonClass.html">PersonClass</a><ul class='methods'><li data-type='method' style='display: none;'><a href="PersonClass.html#getFullName">getFullName</a></li></ul></li><li><a href="person_.html">person</a></li></ul><h3>Global</h3><ul><li><a href="global.html#ApplyDiscount_f">ApplyDiscount_f</a></li><li><a href="global.html#age">age</a></li><li><a href="global.html#fruit">fruit</a></li><li><a href="global.html#fruits">fruits</a></li><li><a href="global.html#getFullName">getFullName</a></li><li><a href="global.html#isCool">isCool</a></li><li><a href="global.html#message">message</a></li><li><a href="global.html#name">name</a></li><li><a href="global.html#person1">person1</a></li><li><a href="global.html#person2">person2</a></li><li><a href="global.html#rating">rating</a></li><li><a href="global.html#stringNumber">stringNumber</a></li><li><a href="global.html#variableType">variableType</a></li><li><a href="global.html#x">x</a></li><li><a href="global.html#y">y</a></li><li><a href="global.html#z">z</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/robert-kuropkat/e4cTraining" target="_blank" class="menu-item" id="repository" >Github repo</a></h2><h3>Classes</h3><ul><li><a href="Fruits.html">Fruits</a><ul class='methods'><li data-type='method' style='display: none;'><a href="Fruits.html#addToEnd">addToEnd</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#addToFront">addToFront</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#getCurrentFruit">getCurrentFruit</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#getFruitCount">getFruitCount</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#getFruitList">getFruitList</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#isListArray">isListArray</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#removeFirst">removeFirst</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#removeLast">removeLast</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#setCurrentFruit">setCurrentFruit</a></li><li data-type='method' style='display: none;'><a href="Fruits.html#whereIsFruit">whereIsFruit</a></li></ul></li><li><a href="Person.html">Person</a></li><li><a href="PersonClass.html">PersonClass</a><ul class='methods'><li data-type='method' style='display: none;'><a href="PersonClass.html#getFullName">getFullName</a></li></ul></li><li><a href="person_.html">person</a></li></ul><h3>Global</h3><ul><li><a href="global.html#ApplyDiscount_af">ApplyDiscount_af</a></li><li><a href="global.html#ApplyDiscount_f">ApplyDiscount_f</a></li><li><a href="global.html#age">age</a></li><li><a href="global.html#getFullName">getFullName</a></li><li><a href="global.html#isCool">isCool</a></li><li><a href="global.html#message">message</a></li><li><a href="global.html#myFruit">myFruit</a></li><li><a href="global.html#myFruits">myFruits</a></li><li><a href="global.html#name">name</a></li><li><a href="global.html#person1">person1</a></li><li><a href="global.html#person2">person2</a></li><li><a href="global.html#rating">rating</a></li><li><a href="global.html#stringNumber">stringNumber</a></li><li><a href="global.html#variableType">variableType</a></li><li><a href="global.html#x">x</a></li><li><a href="global.html#y">y</a></li><li><a href="global.html#z">z</a></li></ul>
     
 </nav>
 
@@ -48,7 +48,12 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * @file Contains array related exercises
+ * @file
+ * Demonstrate creation and manipulation of arrays.  Items demonstrated
+ *   - Creation of Array
+ *   - Remove and add a the last member of the array (pop/push)
+ *   - Remove and add the first member of the array (shift/unshift)
+ *   - Builtin array methods and properties such as isArray(), length and indexOf().
  * @author Robert Kuropkat &lt;robert.kuropkat@gmail.com>
  * 
  */
@@ -56,26 +61,140 @@
 console.log('\nArray Properties and Methods...');
 
 /**
- * @const {array}
+ * @class
+ * @summary Create a Fruits list object
+ * @description Contains a list (Array) of fruits and the "current" fruit.  All Fruits are
+ *              stored as lower case.
+ * @example 
+ * const myFruits = new Fruits();
+ * myFruit = myFruits.addToFront('strawberries');
+ * @author  Robert Kuropkat
  */
-const fruits = ['strawberries', 'apples', 'pears'];
+class Fruits {
+    #fruits = [];
+    #fruit  = null;
+
+    /**
+     * @constructor
+     * @description Simple constructor taking no paraemters
+     * @returns {Fruits} new Fruits object
+     */
+    constructor () {}
+    /**
+     * @method
+     * @description Removes first fruit from list and returns it.  Sets Current Fruit to null.
+     * @returns {string} Requested Fruit
+     */
+    removeFirst () 
+    {
+        this.#fruit = null; 
+        return this.#fruits.shift(); 
+    }
+    /**
+     * @method
+     * @description Removes last fruit from list and returns it.  Sets Current Fruit to null.
+     * @returns {string} Requested Fruit
+     */
+    removeLast  () 
+    { 
+        this.#fruit = null; 
+        return this.#fruits.pop(); 
+    }
+    /**
+     * @method
+     * @description Adds fruit to end of Fruits Array and returns the fruit converted to 
+     *              lower case.
+     * @returns {string} Current Fruit
+     */
+    addToEnd (fruit) 
+    {
+        this.#fruits.push(fruit.toLowerCase());
+        return this.#fruit = fruit.toLowerCase();
+    }
+    /**
+     * @method
+     * @description Adds fruit to front of Fruits Array and returns the fruit converted to 
+     *              lower case.
+     * @param {string} fruit  Current Fruit
+     */
+    addToFront (fruit) 
+    {
+        this.#fruits.unshift(fruit.toLowerCase());
+        return this.#fruit = fruit.toLowerCase();
+    }
+    /**
+     * @method
+     * @description Return a count of all fruits in the list
+     * @returns {number}
+     */
+    getFruitCount () { return this.#fruits.length; }
+    /**
+     * @method
+     * @description return the Array index location of the requested fruit
+     * @param   {string} fruit 
+     * @returns {number}
+     */
+    whereIsFruit (fruit) 
+    {
+        return this.#fruits.indexOf(fruit.toLowerCase());
+    }
+    /**
+     * @method 
+     * @description Set the value of "Current" fruit and return it converted to lower case.
+     * @param {string} fruit 
+     * @returns {string}
+     */
+    setCurrentFruit (fruit) 
+    {
+        this.#fruit = fruit.toLowerCase();
+        return this.#fruit ;
+    }
+    /**
+     * @method
+     * @description  Return the Currnet fruit (it should already be in lower case)
+     * @returns {string}
+     */
+    getCurrentFruit () { return this.#fruit; }
+    /**
+     * @method
+     * @description Test if the Fruits list is of type Array
+     * @returns {boolean} 
+     */
+    isListArray () { return Array.isArray(this.#fruits); }
+    /**
+     * @method
+     * @description Return the entire Fruits list as an array
+     * @returns {Array}  Fruits
+     */
+    getFruitList () { return this.#fruits; }
+}
+
+/**
+ * @const {Fruits}
+ */
+const myFruits = new Fruits();
 /**
  * @type {string}
  */
-let fruit;
+let myFruit    = '';
+
+myFruit = myFruits.addToFront('strawberries');
+myFruit = myFruits.addToFront('apples');
+myFruit = myFruits.addToFront('pears');
 
 console.log("\nRemove last value in array, then put it back (pop/push)");
-fruit = fruits.pop();
-fruits.push(fruit);
-console.log (fruit, fruits);
-console.log("\nRemove first value in array, then put it back (shift/unshift)");
-fruit = fruits.shift();
-fruits.unshift(fruit);
-console.log (fruit, fruits);
+myFruit = myFruits.removeLast();
+myFruit = myFruits.addToEnd(myFruit);
+console.log (myFruit, myFruits.getFruitList());
 
-console.log(`\tIs fruits an array? ${Array.isArray(fruits)}`);
-console.log(`\tFruits is an array with ${fruits.length} members`);
-console.log(`\t'apples' is stored at index: ${fruits.indexOf('apples')}`);
+console.log("\nRemove first value in array, then put it back (shift/unshift)");
+myFruit = myFruits.removeFirst();
+myFruit = myFruits.addToFront(myFruit);
+console.log (myFruit, myFruits.getFruitList());
+
+console.log(`\tIs fruits an array? ${myFruits.isListArray()}`);
+console.log(`\tFruits is an array with ${myFruits.getFruitCount()} members`);
+console.log(`\t'apples' is stored at index: ${myFruits.whereIsFruit('apples')}`);
 
 /**
  *  End of Code
@@ -93,7 +212,7 @@ console.log(`\t'apples' is stored at index: ${fruits.indexOf('apples')}`);
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Mon Jul 01 2024 07:35:07 GMT-0400 (Eastern Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 4.0.3</a> on Tue Jul 02 2024 19:58:43 GMT-0400 (Eastern Daylight Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
 </footer>
 
 <script>prettyPrint();</script>

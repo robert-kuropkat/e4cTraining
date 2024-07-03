@@ -7,7 +7,7 @@
  * see being very useful for looping over arrays of complex structures and finallly 
  * the builtin Array.foreach() method which is a nice concept, but a bit cumbersome 
  * in that you have to pass it a callback function.
- * <p>
+ * 
  * ToDo: Can functions be defined outside the the foreach() call and passed in?  
  * Something like:
  * <pre>

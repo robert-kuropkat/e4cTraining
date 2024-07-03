@@ -14,7 +14,6 @@ console.log('\nObjects...');
 console.log('\n\tObject Literal');
 
 /**
- * person
  * @class
  * 
  * @description
@@ -80,7 +79,6 @@ console.log('JSON ', JSON.stringify(person));
 console.log('\n\tObject function with method prototypes');
 
 /**
- * Person
  * @class
  * 
  * @description
@@ -128,7 +126,6 @@ console.log(person1.getFullName());
 console.log('\n\tClass');
 
 /** 
- * PersonClass
  * @class 
  * 
  * @description
