@@ -2,9 +2,23 @@
 
 # JavaScript Tutorials
 
+## Comments
+
+Contained here is my sample code for the JavaScript basic training.  I spent \[wasted\] a bit of
+extra time here working out how I wanted to present these materials to you.  A GitHub repository
+seemed like an easy solution.  However, while I was at it, I decided to add GitHub Pages and 
+JSDoc to the ToDo list.  GitHub pages in particular has been on my ToDo list for awhlie.
+
+Both GitHub pages and JSDocs are a bit quirky (not suprising) but generally functional so I'll 
+likely spend more time exploring both.
+
+## Training Materials
+
 The e4c basic JavaScript training uses the 
 [JavaScript Crash Course For Beginners](https://www.youtube.com/watch?v=hdI2bqOjy3c){:target="_blank" rel="noopener"} 
 by Traversy Media
+
+## Setup
 
 For these exercises I used the following:
 
@@ -24,6 +38,8 @@ _C:\Users\rober\AppData\Roaming\nvm\v22.3.0\node_modules_
 
 This is probably a path/configuration problem with my npm setup.
 
-[Sample Application](./index1.html)
+## Sample Application and Documentation
+
+[Sample Application](./index1.html)  _Not Yet Ready_
 <br>[Sample Application Documentation](./docs)
 

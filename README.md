@@ -1,7 +1,6 @@
 [Home](/)
 
-# e4cTraining
-Training examples from the e4C Training videos.
+# Training Modules
 
-[JavaScript Tutorials](./JS_Crash_Course/)
+[Basic avaScript Tutorials](./JS_Crash_Course/)
 
