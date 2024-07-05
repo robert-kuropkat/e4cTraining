@@ -1,0 +1,15 @@
+{
+  "name": "nodejs_crash_course",
+  "version": "1.0.0",
+  "description": "e4c Onboarding training for NodeJS",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server",
+    "start": "node server"
+  },
+  "author": "Robert Kuropkat",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
