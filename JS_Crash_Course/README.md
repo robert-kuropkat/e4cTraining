@@ -45,6 +45,6 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 
 ## Sample Application and Documentation
 
-[Sample Application](./index1.html)  _Not Yet Ready_
+[Sample Application](./index1.html)  _Open the Browser Console to see logging Messages_
 <br>[Sample Application Documentation](./docs)
 
