@@ -16,7 +16,7 @@ http
         switch (request.url)
         {
             case '/':
-                path += 'index.html';
+                path += 'index1.html';
                 response.statusCode = 200;
                 break;
             case '/about':
