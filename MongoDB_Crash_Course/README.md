@@ -25,6 +25,7 @@ selected.
 - [MongoDB Shell v2.2.10 for Windows x64](https://www.mongodb.com/try/download/shell).  Usage statistics were disabled using disableTelemetry() at the command prompt.
 - MongoDB for VS Code v1.6.0 (telemetry disabled in extension settins)
 - JSDoc was used to document it with a README.md used by GitPgaes.
+- Added ESLint to the mix.  Installed via 'npm t -D eslint`
 
 ## Documentation
 
