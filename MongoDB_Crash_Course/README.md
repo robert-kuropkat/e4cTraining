@@ -20,11 +20,14 @@ The e4c basic NodeJS training uses the following videos:
 ## Setup
 
 IDE used was VSCode.  
-<br>[MongoDB v7.0.12 for Windows x64](https://www.mongodb.com/try/download/community) was installed locally.  Additionally, MongoDB Compass was installed by leaving the checkbox
-selected.
-<br>[MongoDB Shell v2.2.10 for Windows x64](https://www.mongodb.com/try/download/shell).  Usage statistics were disabled using disableTelemetry() at the command prompt.
-<br>MongoDB for VS Code v1.6.0 (telemetry disabled in extension settins)
-<br>JSDoc was used to document it with a README.md used by GitPgaes.
+
+[MongoDB v7.0.12 for Windows x64](https://www.mongodb.com/try/download/community) was installed locally.  Additionally, MongoDB Compass was installed by leaving the checkbox
+selected. <br>
+[MongoDB Shell v2.2.10 for Windows x64](https://www.mongodb.com/try/download/shell).  Usage statistics were disabled using disableTelemetry() at the command prompt.
+
+MongoDB for VS Code v1.6.0 (telemetry disabled in extension settins)
+
+JSDoc was used to document it with a README.md used by GitPgaes.
 
 ## Documentation
 
