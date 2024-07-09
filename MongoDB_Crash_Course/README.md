@@ -14,8 +14,8 @@ totally defeats the purpose of speeding up the video in the first place...
 
 The e4c basic NodeJS training uses the following videos: 
 
-[MongoDB Crash Course 2022](https://www.youtube.com/watch?v=2QQGWYe7IDU) by Traversy Media
-<br>[Mongoose Crash Course - Beginner Through Advanced](https://www.youtube.com/watch?v=DZBGEVgL2eE) by Web Dev Simplified
+[MongoDB Crash Course 2022](https://www.youtube.com/watch?v=2QQGWYe7IDU) by Traversy Media<br>
+[Mongoose Crash Course - Beginner Through Advanced](https://www.youtube.com/watch?v=DZBGEVgL2eE) by Web Dev Simplified
 
 ## Setup
 
@@ -39,4 +39,5 @@ npm t -D eslint
 
 ## Documentation
 
-[Documentation](./docs)
+[Documentation](./docs)<br>
+[ScreenShots](./screenshots.html)
