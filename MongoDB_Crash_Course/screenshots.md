@@ -13,3 +13,8 @@
 ## Query Using MongoDB Compass Aggregator
 
 ![MongoDB Compass Sample Query showing built in MongoSH](./img/MongoDBCompassSampleQuery.PNG)
+
+## MongoDB Plugin for VSCode using Playground
+
+![MongoDB Plugin for VSCode using the Playground feature](./img/VSCodeMongoDBPlayground.PNG)
+

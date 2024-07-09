@@ -3,7 +3,7 @@
 <head>
     
     <meta charset="utf-8">
-    <title>connect-and-update.js - Documentation</title>
+    <title>playground-1.mongodb.js - Documentation</title>
     
     
     <script src="scripts/prettify/prettify.js"></script>
@@ -37,7 +37,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">connect-and-update.js</h1>
+    <h1 class="page-title">playground-1.mongodb.js</h1>
     
 
     
@@ -49,12 +49,43 @@
         <article>
             <pre class="prettyprint source linenums"><code>/**
  * @file
+ * @description MongoDB Playground 
+ */ 
+/* global use, db */
+
+/**
+ * Select the database to use. cleanup previous runs and recreate.
  */
-/* global connect */
+use('mongodbVSCodePlaygroundDB');
+db.movies.drop();
+db.getCollection('movies').insertMany([
+    {
+        title : 'Titanic',
+        year  : 1997,
+        genres: [ 'Drama', 'Romance' ]
+     },
+     {
+        title : 'Spirited Away',
+        year  : 2001,
+        genres: [ 'Animation', 'Adventure', 'Family' ]
+     },
+     {
+        title : 'Casablanca',
+        genres: [ 'Drama', 'Romance', 'War' ]
+     }
+]);
 
-const db = connect( 'mongodb://localhost:27017/myDatabase' );
+/**
+ * Count and print  number of movies in collection.
+ */
+const movieCount = db.movies.find().count();
+console.log(`${movieCount} total movies in the collection.`);
 
-db.movies.updateOne({title: 'Casablanca'}, {$set: {year: 1998}});
+/**
+ * Create a simple query aggregation
+ */
+const moviesAfterY2K = [ {$match: { 'year': { $gt: 2000 }}} ];
+db.movies.aggregate(moviesAfterY2K);
 </code></pre>
         </article>
     </section>
