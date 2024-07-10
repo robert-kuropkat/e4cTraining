@@ -12,7 +12,7 @@
     , "source"        : 
         {
           "exclude"             : [ "node_modules" ]
-        , "includePattern"      : ".+\\.[m]js(doc|x)?$"
+        , "includePattern"      : ".+\\.(m)?js(doc|x)?$"
         , "excludePattern"      : "(^|\\/|\\\\)_"
         }
     , "tags" : 

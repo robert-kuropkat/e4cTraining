@@ -4,7 +4,18 @@
 
 ## Comments
 
-...
+From the MongoDB video I was able to create and query a MongoDB database and collection using the following methods:
+
+- MongoSH from a PowerShell terminal
+- MongoSH within a VSCode terminal window
+- MongoDB Extension to VSCode _(MongoDB Connections Manager)_
+- MongoDB Extension to VSCode _(MongoDB Playground)_
+- MongoDB Compass
+- NodeJS script
+
+As a side note, the NodeJS script in the video did not work for me.  I assume, but do not yet understand how to configure it differently, that I have NodeJS 
+configured to use ES6 vs. CommonJS syntax.  I don't know if that is a product of having installed ESLint, configuration during the NodeJS or NPM setup or a
+combination of all.
 
 P.S.  The guy in the Mongoose video needs to switch to Decafe and decide it's okay to have an hour long video instead of just 30 minutes.  The rapid fire speaking
 actually made me quesy and made it impossible to follow along in any reasonable manner.  I had to go back and take it in micro-chunks and pause a lot which
