@@ -1,20 +1,17 @@
 {
-  "name": "mongodb_crash_course",
-  "version": "1.0.0",
-  "description": "[Home](/) \\| [e4c Training](/e4cTraining)",
-  "main": "connect-and-insert.js",
-  "directories": {
-    "doc": "docs"
+  "name"            : "mongodb_crash_course",
+  "version"         : "1.0.0",
+  "description"     : "[Home](/) \\| [e4c Training](/e4cTraining)",
+  "main"            : "app.js",
+  "directories"     : { "doc"   : "docs" },
+  "scripts"         : { "start": "node app.mjs" },
+  "keywords"        : [],
+  "author"          : "",
+  "license"         : "ISC",
+  "devDependencies" : {
+    "@eslint/js"  : "^9.6.0",
+    "eslint"      : "^9.6.0",
+    "globals"     : "^15.8.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@eslint/js": "^9.6.0",
-    "eslint": "^9.6.0",
-    "globals": "^15.8.0"
-  }
+  "dependencies"    : { "mongodb" : "^6.8.0" }
 }

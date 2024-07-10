@@ -18,3 +18,6 @@
 
 ![MongoDB Plugin for VSCode using the Playground feature](./img/VSCodeMongoDBPlayground.PNG)
 
+## NodeJS Query
+![Query MongoDB using NodeJS](./img/VSCodeNodeJSQuery.PNG)
+

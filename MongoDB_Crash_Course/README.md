@@ -30,7 +30,11 @@ jsdoc -c .\conf.json .
 ```
 - Added ESLint to the mix.  Installed via 
 ```sh
-npm t -D eslint
+npm i -D eslint
+```
+- MongoDB Driver for NodeJS.  Installed via
+```sh
+npm i mongodb
 ```
 
 ## ToDo
@@ -40,4 +44,4 @@ npm t -D eslint
 ## Documentation
 
 [Documentation](./docs)<br>
-[ScreenShots](./screenshots.html)
+[ScreenShots](./screenshots.md)
