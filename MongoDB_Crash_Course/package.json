@@ -1,17 +1,27 @@
 {
-  "name"            : "mongodb_crash_course",
-  "version"         : "1.0.0",
-  "description"     : "[Home](/) \\| [e4c Training](/e4cTraining)",
-  "main"            : "app.js",
-  "directories"     : { "doc"   : "docs" },
-  "scripts"         : { "start": "node app.mjs" },
-  "keywords"        : [],
-  "author"          : "",
-  "license"         : "ISC",
-  "devDependencies" : {
-    "@eslint/js"  : "^9.6.0",
-    "eslint"      : "^9.6.0",
-    "globals"     : "^15.8.0"
+  "name": "mongodb_crash_course",
+  "version": "1.0.0",
+  "description": "[Home](/) \\| [e4c Training](/e4cTraining)",
+  "main": "server.js",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
   },
-  "dependencies"    : { "mongodb" : "^6.8.0" }
+  "scripts": {
+    "dev": "nodemon server",
+    "app": "node app.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.6.0",
+    "eslint": "^9.6.0",
+    "globals": "^15.8.0",
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.0"
+  }
 }
