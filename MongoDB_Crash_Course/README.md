@@ -14,8 +14,12 @@ From the MongoDB video I was able to create and query a MongoDB database and col
 - NodeJS script
 
 As a side note, the NodeJS script in the video did not work for me.  I assume, but do not yet understand how to configure it differently, that I have NodeJS 
-configured to use ES6 vs. CommonJS syntax.  I don't know if that is a product of having installed ESLint, configuration during the NodeJS or NPM setup or a
+configured to use ES6 rather than CommonJS syntax.  I don't know if that is a product of having installed ESLint, configuration during the NodeJS or NPM setup or a
 combination of all.
+
+For the Mongoose video I expanded on the NodeJS script created above.  As with the MongoDB video, I had to do a bit of work to convert the CommonJS code to ES6.
+I also spent quite a bit of time working with this as MongoDB is particularly unfriendly when it decides not to work, so getting the syntax correct in a few cases
+took a bit more work since I did not exactly match the code being demonstrated.
 
 P.S.  The guy in the Mongoose video needs to switch to Decafe and decide it's okay to have an hour long video instead of just 30 minutes.  The rapid fire speaking
 actually made me quesy and made it impossible to follow along in any reasonable manner.  I had to go back and take it in micro-chunks and pause a lot which
