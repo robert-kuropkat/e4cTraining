@@ -11,7 +11,7 @@
     , "sourceType"    : "module"
     , "source"        : 
         {
-          "exclude"             : [ "node_modules" ]
+          "exclude"             : [ "node_modules", "dist", "public" ]
         , "includePattern"      : ".+\\.js(doc|x)?$"
         , "excludePattern"      : "(^|\\/|\\\\)_"
         }
