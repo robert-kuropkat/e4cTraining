@@ -6,4 +6,5 @@
 [Basic NodeJS Tutorials](./NodeJS_Crash_Course/)<br>
 [MongoDB/Mongoose Tutorials](./MongoDB_Crash_Course/)<br>
 [React Tutorials](./React_Crash_Course)
+[NextJS Tutorials](./nextjs_crash_course)
 
